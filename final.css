@@ -1,0 +1,515 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/******header******/
+.header{
+  height: 70px;
+  background: rgba(0,0,0,0.5);
+  padding: 0 20px;
+  color: cyan;
+  position:fixed;
+  width:98%;
+}
+.logo{
+  line-height: 70px;
+  float: left;
+  text-transform: uppercase;
+  margin:0;
+}
+
+.menu{
+  float: right;
+  line-height: 70px;
+}
+.menu a{
+  color: white;
+  text-transform: uppercase;
+  padding: 0 10px;
+  transition: 0.4s;
+  background-attachment:fixed;
+  color: cyan;
+}
+/*******end of header******/
+/******animation*******/
+.load{
+		animation:slide 4s;
+}
+
+.slider{
+		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment:scroll;
+		width:100%;
+		height:650px;
+		margin: 2px 0;
+		animation-name: slide;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		
+}
+.principal{
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		position:absolute;
+		text-align:center;
+		letter-spacing:5px;
+
+}
+.principal h2{
+	font-size:70px;
+	margin-bottom: 20px;
+	color:white;
+}
+@keyframes slide{
+	0%{
+		background-image: url('b1.jpeg');
+	}
+	10%{
+		background-image: url('b1.jpeg');
+	}
+	20%{
+		background-image: url('b2.jpg');
+	}
+	30%{
+		background-image: url('b3.jpg');
+	}
+	40%{
+		background-image: url('b4.jpg');
+	}
+	50%{
+		background-image: url('b5.jpg');
+	}
+	60%{
+		background-image: url('b6.jpg');
+	}
+	70%{
+		background-image: url('b7.png');
+	}
+	80%{
+		background-image: url('b8.jpg');
+	}
+	90%{
+		background-image: url('b9.png');
+	}
+	100%{
+		background-image: url('b10.png');
+	}
+	
+}
+#a1
+{
+		text-align:center;
+		color:white;
+		font-size: 100px;
+		font-family: 'Audiowide', cursive;
+		animation-name:MyAnimation;
+		animation-duration:4s;
+		animation-iteration-count:1;
+		animation-direction:normal;
+}
+@keyframes MyAnimation{
+0%{
+    transform: translatex(1000px);
+	
+}
+50%{
+    transform: translatex(-200px);
+
+}
+75%{
+    transform: translatex(50px);
+	
+}
+100%{
+   transform: translatex(0px);
+}
+}
+#a2
+{
+		text-align:center;
+		color:green;
+		font-size: 150px;
+		font-family: 'Ma Shan Zheng', cursive;
+		animation-name:MyAnimation1;
+		animation-duration:4s;
+		animation-iteration-count:1;
+		animation-direction:normal;
+}
+@keyframes MyAnimation1{
+0%{
+    transform: translatex(-1000px);
+	
+}
+50%{
+    transform: translatex(200px);
+
+}
+75%{
+    transform: translatex(-50px);
+	
+}
+100%{
+   transform: translatex(0px);
+}
+}
+
+#p2{
+	font-size:20px;
+    color: white;
+    font-style: italic;
+}
+
+/******end of animation******/
+/******pictures******/
+.projects {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat (4, 1fr);
+  grid-template-areas: "item1 item1 item2 item3 item3" "item1 item1 item4 item5 item5" "item6 item7 item7 item5 item5" "item6 item8 item9 item9 item10"
+}
+
+.project-1 {
+  grid-area: item1;
+  background: url(11.jpeg)center/cover  no-repeat;
+}
+
+.project-2 {
+  grid-area: item2;
+  background: url(12.jpeg)center/cover no-repeat;
+}
+
+.project-3 {
+  grid-area: item3;
+  background: url(13.jpeg)center/cover no-repeat;
+}
+
+.project-4 {
+  grid-area: item4;
+  background: url(14.jpeg)center/cover no-repeat;
+}
+
+.project-5 {
+  grid-area: item5;
+  background: url(15a.jpg)center/cover  no-repeat;
+}
+
+.project-6 {
+  grid-area: item6;
+  background: url(16.jpeg)center/cover  no-repeat;
+}
+
+.project-7 {
+  grid-area: item7;
+  background: url(17.jpeg)center/cover no-repeat;
+}
+
+.project-8 {
+  grid-area: item8;
+  background: url(18.jpeg)center/cover no-repeat;
+}
+
+.project-9 {
+  grid-area: item9;
+  background: url(19.jpg)center/cover no-repeat;
+}
+
+.project-10 {
+  grid-area: item10;
+  background: url(20.jpg)center/cover no-repeat;
+}
+
+.project {
+  transition: opacity 2s ease;
+}
+
+.project:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/*end of pictures*/	
+/*about*/
+.about-image{
+	background: url("b6.jpg") center/cover  no-repeat;
+	height: 400px;
+}
+.about-tex{
+	display: flex;
+	background: transparent;
+	color: white;
+}
+
+.about-tex h1{
+	text-transform: uppercase;
+	font-size:30px;
+	padding-bottom: : 20px;
+}
+.about-tex p{
+	margin: 20px;
+	line-height: 2;
+}
+
+.about-tex a:hover{
+	color: yellow;
+	background: c;
+	border-color: cyan;
+}
+
+.about{
+		display: flex;
+	}
+
+.about-image{
+	flex: 0 0 60%;
+	clip-path: polygon(0 0 ,100% 0,50% 100%,0 100%);
+	
+}
+.about{
+	background: teal;
+}
+
+/*end of about*/
+
+/*services*/
+.dd{
+	width:1100px;
+	height:260px;
+	
+	padding-left:180px;
+}
+.d1{
+	float:left;
+	width: 300px;
+	height: 250px;
+	border:2px solid red;
+    background: url("image.jpeg");
+   
+}
+.d2{
+	width: 250px;
+	height: 200px;
+	border:2px solid white;
+	background-color: white;
+	margin-left: 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+}
+.d3{
+	margin-left: 55px;
+	float:left;
+	width: 300px;
+	height: 250px;
+	border:2px solid red;
+    background: url("image.jpeg");
+	
+}
+.d4{
+	width: 250px;
+	height: 200px;
+	border:2px solid white;
+	background-color: white;
+	margin-left: 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+	float:50px;
+}
+.d5{
+	margin-left: 55px;
+	float:left;
+    width: 300px;
+	height: 250px;
+	border:2px solid red;
+    background: url("image.jpeg");
+    
+}
+.d6{
+	width: 250px;
+	height: 200px;
+	border:2px solid white;
+	background-color: white;
+	margin-left: 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+}
+h1{
+	font-size: 30px;
+	padding:30px;
+}
+
+h2{
+	font-size: 20px;
+	
+}
+/* end of services */
+/*tours*/
+.section1
+{
+	
+	height:390px;
+	width:100%;
+	background: #000;
+	box-shadow: 0 25px 30px rgba(0,0,0,.5);
+	display:flex;
+	padding:30px 0px;
+	background:white;
+}
+.fa {
+
+		margin:-5px;
+		font-size:20px;
+		text-align:left;
+		padding:0px 5px;
+		
+}
+.checked {
+  color: orange;
+}
+.ra
+{
+	padding:0px 50px;
+}
+.content
+{
+	width: calc(50% + 50px);
+	height: 100%;
+	background: white;
+	box-sizing: border-box;
+}
+.w3
+{
+	font-size:35px;
+	padding: 0px 50px;
+	color:RGB(0, 128, 128);
+}
+.m1
+{
+	padding: 15px 60px;
+	color:RGB(0, 128, 128);
+	font-size:19px;
+}
+.butt
+{
+		background-color:RGB(0, 128, 128);
+		border:none;
+		float:left;
+		color:black;
+		padding:35px 10px;
+		text-align: center;
+		font-size:20px;
+		
+}
+.button
+{
+		margin: 0px ;
+		background-color:gray;
+		border:none;
+		float:center;
+		color:white;
+		padding:20px 20px;
+		text-align: center;
+		font-size:16px;
+		cursor:pointer;
+}
+.button:hover
+{
+		background-color:RGB(0, 128, 128);
+}
+
+.imageBox1
+{	
+	width:700px;
+	height:400px;
+	background: url("1.jpg");	
+	
+}
+.imageBox2
+{	
+	width:700px;
+	height:400px;
+	background: url("2.jpg");	
+	
+}
+.imageBox3
+{	
+	width:700px;
+	height:400px;
+	background: url("3.jpg");	
+	
+}
+.imageBox4
+{	
+	width:700px;
+	height:400px;
+	background: url("4.jpg");	
+	
+}.imageBox5
+{	
+	width:700px;
+	height:400px;
+	background: url("5.jpg");	
+	
+}.imageBox6
+{	
+	width:700px;
+	height:400px;
+	background: url("6.jpg");	
+	
+}
+/*end of tours*/
+/*gallery*/
+
+.z1{
+		text-align:center;
+		font-size:70px;
+		color:teal;
+		margin:10px 0 50px;
+		
+}
+.gallery{
+	margin:10px 20px;
+	border:1px solid #ccc;
+	float:left;
+	width:390px;
+	background-color:black;
+}
+.gallery img{
+	margin:6px;
+	width:350px;
+	height:250px;
+	padding: 15px;
+}
+.gallery img:hover{
+transform: scale(1.08);
+}
+.desc{
+	padding:15px;
+	font-family:ariel;
+	font-size:30px;
+	text-align:left;
+	color:white;
+}	
+/*end of gallery*/
+/*contact*/
+.team-name{
+	font-size:25px;
+	padding:10px;
+}
+.team-p{
+	font-size:20px;
+	padding:10px;
+}
+.fab{
+		margin:-5px;
+		font-size:20px;
+		text-align:left;
+		padding:15px;
+		color:
+}
+/*end of contact*/
